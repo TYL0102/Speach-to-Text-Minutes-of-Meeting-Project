@@ -5,6 +5,7 @@ import json
 import paho.mqtt.client as mqtt
 from faster_whisper import WhisperModel
 
+
 # --- MQTT 參數 ---
 MQTT_BROKER = "140.116.245.211"
 MQTT_TOPIC = "STT_Result"
