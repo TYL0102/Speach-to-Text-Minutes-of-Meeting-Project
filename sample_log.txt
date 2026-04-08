@@ -1,0 +1,14 @@
+MIC01
+"Hello, this is a test of the distributed speech-to-text system. Speaker A is now broadcasting from the first node."
+
+MIC02
+"Received. Speaker B is online. I am testing the second node to verify the multi-client concurrency on our MQTT broker."
+
+MIC01
+"The audio processing seems efficient. By using the Tiny model of Faster-Whisper on the Raspberry Pi, we significantly reduce server-side load."
+
+MIC02
+"Agreed. The edge computing approach minimizes the data bandwidth required, as we only transmit the transcribed text strings."
+
+MIC01
+"Let's check the synchronized timestamps in the final log. This confirms the real-time performance of our meeting recorder."

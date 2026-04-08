@@ -1,0 +1,25 @@
+# --- System Dependencies ---
+
+# 更新系統套件表
+sudo apt update
+
+# 安裝音訊處理基礎庫 (PyAudio 需要)
+sudo apt install libportaudio2 libasound2-dev portaudio19-dev -y
+
+# 安裝編譯工具 (確保部分 C 擴充套件能順利安裝)
+sudo apt install python3-dev build-essential -y
+
+# --- Python Libraries ---
+
+# 核心音訊處理
+pip install pyaudio numpy
+
+# AI 語音辨識 (Faster-Whisper)
+pip install faster-whisper
+
+# 通訊協議 (MQTT)
+pip install paho-mqtt
+
+# 深度學習後端 (Faster-Whisper 的依賴)
+# 註：在 Pi 上通常會自動安裝 cpu 版本，若報錯可嘗試：
+pip install torch --index-url https://download.pytorch.org/whl/cpu
